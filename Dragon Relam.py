@@ -8,7 +8,7 @@ and will share his __TREASURE__ with you. The other dragon
 is __GREEDY__ and hungry, and will __EAT__ you on sight.''' "\n")    #Multiline string ('''TEXT''')
 
 
-def chose_cave():
+def find_treasure():
     number = int(input('Which cave will you go into? (1 or 2)   '))
     time.sleep(2)                                                              #The time module has a function called sleep() that pauses the program.
     print('You approached the cave...')
@@ -31,7 +31,7 @@ playthe_game = "yes"
 while playthe_game == 'yes' or playthe_game == "y":
     cave_message()
     time.sleep(3)
-    cave_number = chose_cave()
+    cave_number = find_treasure()
     print()
     time.sleep(2)
     playthe_game = input('Do you want to play again? (yes or no)  ')
